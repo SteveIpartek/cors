@@ -5,9 +5,9 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors()); // Evitar problemas con CORS
+app.use(cors());
 
-// Obtener todos los personajes
+
 app.get('/characters', async (req, res) => {
   try {
     const response = await axios.get('https://rickandmortyapi.com/api/character');
@@ -17,7 +17,7 @@ app.get('/characters', async (req, res) => {
   }
 });
 
-// Obtener un personaje por nombre
+
 app.get('/characters/:name', async (req, res) => {
   const { name } = req.params;
   try {
