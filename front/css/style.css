@@ -1,0 +1,16 @@
+body { 
+    font-family: sans-serif; 
+    padding: 2rem; 
+    background: #f4f4f4; 
+}
+#result img { 
+    width: 200px; 
+    border-radius: 1rem; 
+}
+.card { 
+    background: white; 
+    padding: 1rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 0 10px #ccc; 
+    max-width: 300px;
+ }
